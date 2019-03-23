@@ -1,0 +1,24 @@
+.cardsize{
+  height: 250px;
+}
+
+.chart-height{
+  display:flex;
+}
+
+.card-header-total{
+  color: white;
+  text-align: center;
+}
+
+.colorheaderAt{
+  background: rgba(0, 230, 64, 1);
+}
+
+.colorheaderPa{
+  background: rgba(242, 38, 19, 1);
+}
+
+.colorheaderPl{
+  background: rgba(52, 152, 219, 1);
+}

@@ -1,0 +1,42 @@
+<h2>Cadastro de cooperativas</h2><br>
+
+<!-- {{coopForm.value | json}} -->
+<form [formGroup]="coopForm">
+  <div class="row">
+    <div class="col-lg-2 col-sm-12">
+      <label for="number">Número</label>
+      <app-input-container errorMessage="Cooperativa deve ter 4 dígitos">
+        <input type="text" formControlName="number" class="form-control" id="number" placeholder="">
+      </app-input-container>
+    </div>
+    <div class="col-lg-10 col-sm-12">
+      <label for="name">Nome</label>
+      <app-input-container>
+        <input type="text" formControlName="name" class="form-control" id="name" placeholder="">
+      </app-input-container>
+    </div>
+  </div>
+  <button (click)="createCoop(coopForm.value)" type="submit" class="btn btn-primary">Cadastrar</button>
+</form>
+<br>
+
+<section class="content">
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Número</th>
+      <th>Nome</th>
+      <th>Ação</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let coop of coops">
+    <tr >
+      <th scope="row">{{coop.number}}</th>
+      <td>{{coop.name}}</td>
+      <td>Ação</td>
+    </tr>
+    </tbody>
+  </table>
+
+</section>

@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <b>Ativo</b>
+      <div class="card cardsize">
+        <div class="card-header colorheaderAt">
+          <h3 class="card-header-total">R$ 128.400,00</h3>
+        </div>
+        <div [hidden]="!chartAt">
+          <canvas class="mw-100" id="canvasAt" height="180">{{chartAt}}</canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <b>Passivo</b>
+      <div class="card cardsize">
+        <div class="card-header colorheaderPa">
+          <h3 class="card-header-total">R$ 93.800,00</h3>
+        </div>
+        <div [hidden]="!chartPa">
+          <canvas class="mw-100" id="canvasPa" height="180">{{chartPa}}</canvas>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <b>Patrimonio Líquido</b>
+      <div class="card cardsize">
+        <div class="card-header colorheaderPl">
+          <h3 class="card-header-total">R$ 34.600,00</h3>
+        </div>
+        <div [hidden]="!chartPl">
+          <canvas class="mw-100" id="canvasPl" height="180">{{chartPl}}</canvas>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <b>Status</b>
+      <div class="card cardsize">
+        <div class="card-header colorheaderAt">
+          <h3 class="card-header-total">OK</h3>
+        </div>
+        <div [hidden]="!chartOk">
+          <canvas class="mw-100" id="canvasOk" height="180">{{chartOk}}</canvas>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
