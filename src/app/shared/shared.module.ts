@@ -4,8 +4,6 @@ import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CoopService} from '../layout/coop/coop.service';
 
-//import {SnackbarComponent} from './messages/snackbar/snackbar.component';
-
 @NgModule({
   declarations: [InputComponent],
   imports: [CommonModule, FormsModule, ReactiveFormsModule],

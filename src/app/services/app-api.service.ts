@@ -1,13 +1,12 @@
-import {Injectable} from '@angular/core';
-import {environment} from '../../../environments/environment';
-import {HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
-import {Coop} from './coop.model';
+import {environment} from '../../environments/environment';
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {Observable, throwError} from 'rxjs';
-import {catchError} from 'rxjs/operators';
-
+import {Coop} from '../layout/coop/coop.model';
+import {Account} from '../layout/accounts/accounts.model';
+import {Injectable} from '@angular/core';
 
 @Injectable()
-export class CoopService {
+export class AppApiService {
 
   private urlGet = `${environment._accountSheetApi_url}`;
 
@@ -20,6 +19,18 @@ export class CoopService {
 
   addCoop(coop: Coop): Observable<Coop> {
     return this.http.post<Coop>(`${this.urlGet}/coops`, coop);
+  }
+
+  getAccountsAll(): Observable<Account[]> {
+    return this.http.get<Account[]>(`${this.urlGet}/account/4`);
+  }
+
+  getAccounts(number: string): Observable<Account[]> {
+    return this.http.get<Account[]>(`${this.urlGet}/account/${number}`);
+  }
+
+  importFile(file: File) {
+    return this.http.post(`${this.urlGet}/file`, file);
   }
 
 
@@ -38,4 +49,5 @@ export class CoopService {
     return throwError(
       'Something bad happened; please try again later.');
   }
+
 }

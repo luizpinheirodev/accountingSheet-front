@@ -1,0 +1,22 @@
+<section class="content">
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Número</th>
+      <th>Nome</th>
+      <th>Saldo</th>
+      <th>Ação</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let account of accounts">
+    <tr>
+      <th scope="row">{{account.number}}</th>
+      <td>{{account.name}}</td>
+      <td>{{account.total}}</td>
+      <td (click)="goToSheet(account.number)">Ir para composição</td>
+    </tr>
+    </tbody>
+  </table>
+
+</section>

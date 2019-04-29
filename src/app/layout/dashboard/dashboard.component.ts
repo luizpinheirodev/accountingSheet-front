@@ -1,24 +1,28 @@
 import {Component, OnInit} from '@angular/core';
 import {Chart} from 'chart.js';
+import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-balance',
-  templateUrl: './balance.component.html',
-  styleUrls: ['./balance.component.css']
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
 })
-export class BalanceComponent implements OnInit {
+export class DashboardComponent implements OnInit {
 
   chartAt = [];
   chartPa = [];
   chartPl = [];
   chartOk = [];
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
 
-    this.chartAt = new Chart('canvasAt', {
+
+
+
+    /*this.chartAt = new Chart('canvasAt', {
       type: 'bar',
       data: {
         labels: ['Circulante', 'Não circulante'],
@@ -69,8 +73,6 @@ export class BalanceComponent implements OnInit {
         }
       }
     });
-
-
 
 
     this.chartPa = new Chart('canvasPa', {
@@ -182,7 +184,6 @@ export class BalanceComponent implements OnInit {
     });
 
 
-
     this.chartOk = new Chart('canvasOk', {
       type: 'pie',
       data: {
@@ -235,8 +236,13 @@ export class BalanceComponent implements OnInit {
         }
       }
     });
+    */
+
+  }
 
 
+  goToAccount(number: string) {
+    this.router.navigate([`contas/${number}`]);
   }
 
 }

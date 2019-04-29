@@ -1,0 +1,48 @@
+<div *ngIf="currentFileUpload" class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+       attr.aria-valuenow="{{progress.percentage}}"
+       aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width:progress.percentage+'%'}">
+    {{progress.percentage}}%
+  </div>
+</div>
+
+<label class="btn btn-default">
+  <input type="file" (change)="selectFile($event)">
+</label>
+
+<button class="btn btn-success" [disabled]="!selectedFiles" (click)="upload()">Importar</button>
+
+
+<section class="content">
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Número</th>
+      <th>Nome</th>
+      <th>Ação</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let row of uploadA">
+      <td>{{row}}</td>
+      <td>{{row}}</td>
+
+    </tr>
+    </tbody>
+    <!--
+    <tbody *ngFor="let r of uploadA">
+    <tr >
+      <th scope="row">{{r.fileName}}</th>
+      <td>{{r.fileName}}</td>
+      <td>Ação</td>
+    </tr>
+    </tbody>
+    -->
+
+  </table>
+
+</section>
+
+

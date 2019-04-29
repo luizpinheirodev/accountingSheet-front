@@ -1,10 +1,10 @@
-/*import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
-import {CoopComponent} from './layout/coop/coop.component';
-import {BalanceComponent} from './layout/balance/balance.component';
+/*upload_Old {NgModule} from '@angular/core';
+upload_Old {Routes, RouterModule} from '@angular/router';
+upload_Old {CoopComponent} from './layout/coop/coop.component';
+upload_Old {DashboardComponent} from './layout/dashboard/dashboard.component';
 
 const routes: Routes = [
-  {path: '', component: BalanceComponent},
+  {path: '', component: DashboardComponent},
   {path: 'coops', component: CoopComponent}
 ];
 

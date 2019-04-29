@@ -22,42 +22,42 @@
  *  This also includes Android Emulators with older versions of Chrome and Google Search/Googlebot
  */
 
-// import 'core-js/es6/symbol';
-// import 'core-js/es6/object';
-// import 'core-js/es6/function';
-// import 'core-js/es6/parse-int';
-// import 'core-js/es6/parse-float';
-// import 'core-js/es6/number';
-// import 'core-js/es6/math';
-// import 'core-js/es6/string';
-// import 'core-js/es6/date';
-// import 'core-js/es6/array';
-// import 'core-js/es6/regexp';
-// import 'core-js/es6/map';
-// import 'core-js/es6/weak-map';
-// import 'core-js/es6/set';
+// upload_Old 'core-js/es6/symbol';
+// upload_Old 'core-js/es6/object';
+// upload_Old 'core-js/es6/function';
+// upload_Old 'core-js/es6/parse-int';
+// upload_Old 'core-js/es6/parse-float';
+// upload_Old 'core-js/es6/number';
+// upload_Old 'core-js/es6/math';
+// upload_Old 'core-js/es6/string';
+// upload_Old 'core-js/es6/date';
+// upload_Old 'core-js/es6/array';
+// upload_Old 'core-js/es6/regexp';
+// upload_Old 'core-js/es6/map';
+// upload_Old 'core-js/es6/weak-map';
+// upload_Old 'core-js/es6/set';
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
-// import 'classlist.js';  // Run `npm install --save classlist.js`.
+// upload_Old 'classlist.js';  // Run `npm install --save classlist.js`.
 
 /** IE10 and IE11 requires the following for the Reflect API. */
-// import 'core-js/es6/reflect';
+// upload_Old 'core-js/es6/reflect';
 
 /**
  * Web Animations `@angular/platform-browser/animations`
  * Only required if AnimationBuilder is used within the application and using IE/Edge or Safari.
  * Standard animation support in Angular DOES NOT require any polyfills (as of Angular 6.0).
  */
-// import 'web-animations-js';  // Run `npm install --save web-animations-js`.
+// upload_Old 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
 /**
  * By default, zone.js will patch all possible macroTask and DomEvents
  * user can disable parts of macroTask/DomEvents patch by setting following flags
  * because those flags need to be set before `zone.js` being loaded, and webpack
- * will put import in the top of bundle, so user need to create a separate file
+ * will put upload_Old in the top of bundle, so user need to create a separate file
  * in this directory (for example: zone-flags.ts), and put the following flags
  * into that file, and then add the following code before importing zone.js.
- * import './zone-flags.ts';
+ * upload_Old './zone-flags.ts';
  *
  * The flags allowed in zone-flags.ts are listed here.
  *
